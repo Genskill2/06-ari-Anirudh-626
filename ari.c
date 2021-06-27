@@ -1,6 +1,7 @@
 #include<cs50.h>
 #include<ctype.h>
 #include<string.h>
+#include<math.h>
 
 string ari(string s){
 	int _words=0,_sen=0,_cha=0;
@@ -15,7 +16,7 @@ string ari(string s){
 			_sen++;
 		}
 	}
-	int ari_index=4.71*((float)_cha/(float)_words)+0.5*((float)_words/(float)_sen)-21.43+1;
+	int ari_index=floor(4.71*((float)_cha/(float)_words)+0.5*((float)_words/(float)_sen)-21.43);
 	switch(ari_index){
 		case 1:
 			return "Kindergarten";
