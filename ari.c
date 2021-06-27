@@ -1,3 +1,5 @@
+#include<cs50.h>
+
 string ari(string s){
 	int _words=0,_sen=0,_cha=0;
 	for(int i=0;i<strlen(s);i++){
