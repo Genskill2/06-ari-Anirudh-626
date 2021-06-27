@@ -15,7 +15,7 @@ string ari(string s){
 			_sen++;
 		}
 	}
-	int ari_index=4.71*((float)_cha/(float)_words)+0.5*(float)_words/(float)_sen)-21.43;
+	int ari_index=4.71*((float)_cha/(float)_words)+0.5*((float)_words/(float)_sen)-21.43;
 	switch(ari_index){
 		case 1:
 			return "Kindergarten";
